@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "DIY Popup Blocker",
+  "version": "1.0",
+  "description": "Kills social-proof nudges, consent popups, and overlays on diy.com",
+  "content_scripts": [
+    {
+      "matches": ["*://*.diy.com/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

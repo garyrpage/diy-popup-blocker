@@ -1,0 +1,26 @@
+/* Social proof nudges — "Only 2 left!", "X people viewing" */
+[data-testid*="social-proof"],
+[data-testid*="social_proof"],
+[class*="social-proof"],
+[class*="socialProof"],
+[id*="social-proof"] {
+  display: none !important;
+}
+
+/* Didomi GDPR consent popup */
+#didomi-host,
+#didomi-popup,
+#didomi-notice,
+.didomi-popup-container,
+.didomi-notice,
+[id^="didomi"],
+[class^="didomi"] {
+  display: none !important;
+}
+
+/* Generic overlay / modal backdrop — prevents scroll-lock flash */
+body.didomi-popup-open,
+body.modal-open,
+html.modal-open {
+  overflow: auto !important;
+}
